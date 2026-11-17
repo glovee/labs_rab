@@ -23,6 +23,11 @@ def main():
     seed = 42
 
     volume, points, inside = monte_carlo_sphere(radius, n_points, seed)
+    print('\n')
+    ttt = monte_carlo_sphere(radius, n_points, seed)
+    ttt[0]
+    print(ttt)
+    print('\n')
     exact = 4 / 3 * np.pi * radius ** 3
     error = abs(volume - exact)
 
